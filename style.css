@@ -38,23 +38,57 @@ section.image-part {
   width: 90%;
 }
 
+/*login section of the page*/
 section.login-part {
   height: 100vh;
   width: 40%;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
-  padding: 2% 3%;
+  padding: 5%;
 }
+/*Xam logo*/
 img {
-  width: 70%;
+  width: 75%;
 }
+/*sub-heading*/
+.subheading {
+  color: #6659e0;
+  font-weight: 900;
+  font-size: 1.5vw;
+  margin-top: 0px;
+}
+
+/*small nav of login and signup*/
+
 a {
-  display: inline;
-  margin: 2%;
+  text-decoration: none;
+  margin-bottom: 0px;
 }
+
+.login-signup-links {
+  margin: 15% 0% 2%;
+  display: flex;
+  height: auto;
+  width: 30%;
+  border-bottom: #e8e8e8 1px solid;
+}
+
+.login-link {
+  color: #675be1;
+  font-size: 1vw;
+  font-weight: bolder;
+  border-bottom: #6659e0 2px solid;
+  padding-bottom: 10%;
+}
+.signup-link {
+  margin-left: auto;
+  font-size: 1vw;
+  color: #b3adf0;
+  font-weight: bolder;
+  padding-bottom: 10%;
+}
+
 form {
   margin: 5% 0%;
   width: 70%;
@@ -66,10 +100,6 @@ input::placeholder {
   font-weight: bold;
 }
 
-a {
-  text-decoration: none;
-  margin-bottom: 0px;
-}
 footer {
   margin-top: 3%;
   display: flex;
@@ -79,30 +109,6 @@ footer {
 p {
   color: #6f6f6f;
   font-weight: bold;
-}
-
-.subheading {
-  color: #6659e0;
-  font-weight: 900;
-  font-size: 2rem;
-  margin-top: 0px;
-}
-
-.login-signup-buttons {
-  display: flex;
-  height: 5%;
-  width: 28%;
-  border-bottom: #e8e8e8 1px solid;
-}
-.login-link {
-  color: #675be1;
-  font-weight: bolder;
-  border-bottom: #6659e0 2px solid;
-}
-.signup-link {
-  margin-left: auto;
-  color: #b3adf0;
-  font-weight: bolder;
 }
 
 #Email_address {
