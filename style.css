@@ -9,6 +9,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: 'Quicksand', sans-serif;
+  background-color: #e5e6fb;
 }
 /*to take the main take full screen for flexbox*/
 main {
@@ -21,9 +22,9 @@ main {
 /*to adjust the image part according to screen*/
 section.image-part {
   height: 100vh;
-  width: 60%;
+  width: 75rem;
   position: relative;
-  background-color: #e5e6fb;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,17 +32,15 @@ section.image-part {
 }
 
 .image {
-  background-image: url('Object.png');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  height: 90%;
   width: 90%;
 }
 
 /*login section of the page*/ /*i have issue in fixing the border radius*/
 section.login-part {
+  border-radius: 20px 0px 0px 20px;
+  background-color: white;
   height: 100vh;
-  width: 40%;
+  width: 45rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +61,7 @@ img {
 .subheading {
   color: #6659e0;
   font-weight: 900;
-  font-size: 1.5vw;
+  font-size: 2vw;
   margin-top: 0px;
 }
 
@@ -159,3 +158,40 @@ p {
 }
 
 /*for responsiveness */
+@media only screen and (max-width: 640px) {
+  main {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+  }
+  section.image-part {
+    width: auto;
+    height: 22rem;
+    position: relative;
+    margin-bottom: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.login-part {
+    border-radius: 20px 20px 0px 0px;
+    margin-top: 10%;
+    width: 100%;
+  }
+  .signup-link,
+  .login-link {
+    font-size: 3vw;
+  }
+  .subheading {
+    font-size: 5vw;
+  }
+  p {
+    font-size: 2vw;
+  }
+
+  .social-handles {
+    display: flex;
+    justify-content: space-between;
+  }
+}
