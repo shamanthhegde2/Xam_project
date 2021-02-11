@@ -1,22 +1,43 @@
+/* For the font-family */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 * {
   box-sizing: border-box;
 }
+
+/* to remove padding and margin of the body */
 body {
   margin: 0px;
   padding: 0px;
   font-family: 'Quicksand', sans-serif;
 }
+/*to take the main take full screen for flexbox*/
 main {
   height: 100%;
   max-width: 100%;
   display: flex;
   flex-direction: row;
 }
+
+/*to adjust the image part according to screen*/
 section.image-part {
   height: 100vh;
   width: 60%;
+  max-width: 60%;
+  position: relative;
+  background-color: #e5e6fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.image {
+  background-image: url('Object.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 90%;
+  width: 90%;
+}
+
 section.login-part {
   height: 100vh;
   width: 40%;
@@ -30,7 +51,6 @@ section.login-part {
 img {
   width: 70%;
 }
-
 a {
   display: inline;
   margin: 2%;
@@ -39,19 +59,35 @@ form {
   margin: 5% 0%;
   width: 70%;
 }
+
+input::placeholder {
+  color: #adaeb0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  margin-bottom: 0px;
+}
+footer {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+}
+p {
+  color: #6f6f6f;
+  font-weight: bold;
+}
+
 .subheading {
   color: #6659e0;
   font-weight: 900;
   font-size: 2rem;
   margin-top: 0px;
 }
-.image-part {
-  background-image: url('Object.png');
-  background-color: #e5e6fb;
-  background-size: 60% 60%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 .login-signup-buttons {
   display: flex;
   height: 5%;
@@ -99,13 +135,8 @@ form {
   border-style: solid;
   border-color: #665ae2;
 }
-input::placeholder {
-  color: #adaeb0;
-  font-size: 1rem;
-  font-weight: bold;
-}
 
-a {
-  text-decoration: none;
-  margin-bottom: 0px;
+.social-media {
+  color: #3b3939;
+  font-weight: bold;
 }
