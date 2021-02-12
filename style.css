@@ -110,7 +110,7 @@ form {
   padding-left: 5%;
 }
 
-#Password {
+input[name='Password'] {
   margin: 7% 0%;
   width: 100%;
   height: 60px;
@@ -157,7 +157,29 @@ p {
   font-weight: bold;
 }
 
+div p {
+  display: inline-block;
+  margin: 0px px;
+}
 /*for responsiveness */
+@media (min-width: 641px) and (max-width: 1200px) {
+  .login {
+    width: 99%;
+  }
+  img {
+    width: 80%;
+  }
+  .signup-link,
+  .login-link {
+    font-size: 1.5vw;
+  }
+  .subheading {
+    font-size: 3vw;
+  }
+  p {
+    font-size: 1vw;
+  }
+}
 @media only screen and (max-width: 640px) {
   main {
     width: auto;
@@ -176,8 +198,12 @@ p {
 
   section.login-part {
     border-radius: 20px 20px 0px 0px;
-    margin-top: 10%;
+    margin-top: 3%;
     width: 100%;
+    padding: 0;
+  }
+  .login {
+    width: 99%;
   }
   .signup-link,
   .login-link {
@@ -187,11 +213,6 @@ p {
     font-size: 5vw;
   }
   p {
-    font-size: 2vw;
-  }
-
-  .social-handles {
-    display: flex;
-    justify-content: space-between;
+    font-size: 2.5vw;
   }
 }
