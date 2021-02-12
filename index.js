@@ -3,14 +3,19 @@ let signup = document.querySelector('.signup-part')
 let login_link = document.querySelector('.login-link')
 let signup_link = document.querySelector('.signup-link')
 
-function show_password() {
-  let x = document.getElementById('login_Password')
-  if (x.type === 'password') {
+document
+  .querySelector('.show_password')
+  .addEventListener('mousedown', function show_password() {
+    let x = document.getElementById('login_Password')
     x.type = 'text'
-  } else {
+  })
+
+document
+  .querySelector('.show_password')
+  .addEventListener('mouseup', function show_password() {
+    let x = document.getElementById('login_Password')
     x.type = 'password'
-  }
-}
+  })
 signup.style.display = 'none'
 
 function login_switch() {
