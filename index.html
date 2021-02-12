@@ -22,17 +22,20 @@
           <!-- <hr /> -->
           <form action="">
             <input
-              type="text"
-              name="Email_address"
-              id="Email_address"
+              type="email"
+              name="login_Email_address"
+              id="login_Email_address"
               placeholder="Email Address"
             />
-            <input
-              type="text"
-              name="Password"
-              id="Password"
-              placeholder="Password"
-            />
+            <div class="password-show">
+              <input
+                type="password"
+                name="login_Password"
+                id="login_Password"
+                placeholder="Password"
+              />
+              <span onclick="show_password()">Show</span>
+            </div>
             <input class="login-button" type="submit" value="Login" />
           </form>
           <footer class="footer">
@@ -54,26 +57,26 @@
             </a>
           </div>
           <!-- <hr /> -->
-          <form action="">
+          <form action="" class="need_validation">
             <input
-              type="text"
-              name="Email_address"
-              id="Email_address"
+              type="email"
+              name="signup_Email_address"
+              id="signup_Email_address"
               placeholder="Email Address"
             />
             <input
-              type="text"
-              name="Password"
-              id="Password"
+              type="password"
+              name="sign_Password"
+              id="sign_Password"
               placeholder="Password"
             />
             <input
-              type="text"
+              type="password"
               name="ConfirmPassword"
               id="ConfirmPassword"
               placeholder="ConfirmPassword"
             />
-            <input class="login-button" type="submit" value="Login" />
+            <input class="signup-button" type="submit" value="Signup" />
           </form>
           <footer class="footer">
             <p class="or-login">Or login with</p>

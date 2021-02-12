@@ -105,11 +105,14 @@ a.blue-line {
 }
 /*input form(email address and password)*/ /*i i have issue in this part*/
 form {
-  margin: 5% 0%;
+  margin: 5% 0% 2%;
   width: 80%;
 }
+input {
+  font-size: 1.2rem;
+}
 
-#Email_address {
+#login_Email_address {
   width: 100%;
   height: 60px;
   background-color: #f5f6f8;
@@ -118,8 +121,25 @@ form {
   padding: 0%;
   padding-left: 5%;
 }
-
-input[name='Password'] {
+#signup_Email_address {
+  width: 100%;
+  height: 60px;
+  background-color: #f5f6f8;
+  border-radius: 4px;
+  border: #ecedee 2px solid;
+  padding: 0%;
+  padding-left: 5%;
+}
+input[name='login_Password'] {
+  margin: 3% 0%;
+  width: 100%;
+  height: 60px;
+  background-color: #f5f6f8;
+  border-radius: 4px;
+  border: #ecedee 2px solid;
+  padding-left: 5%;
+}
+input[name='sign_Password'] {
   margin: 3% 0%;
   width: 100%;
   height: 60px;
@@ -130,6 +150,16 @@ input[name='Password'] {
 }
 
 .login-button {
+  width: 100%;
+  height: 60px;
+  font-size: 1.3rem;
+  color: white;
+  background-color: #665ae2;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #665ae2;
+}
+.signup-button {
   width: 100%;
   height: 60px;
   font-size: 1.3rem;
@@ -171,10 +201,26 @@ input[name='ConfirmPassword'] {
   border: #ecedee 2px solid;
   padding-left: 5%;
 }
+.password-show {
+  position: relative;
+}
+span {
+  position: absolute;
+  color: #665ae1;
+  top: 37%;
+  right: 6%;
+}
+span:hover {
+  cursor: pointer;
+}
+
+input.red_border {
+  border: red 2px solid;
+}
 /*footer of login-part*/
 
 footer {
-  margin-top: 3%;
+  margin-top: 0%;
   display: flex;
   justify-content: space-between;
   flex-flow: row nowrap;
@@ -217,7 +263,6 @@ div p {
 @media only screen and (max-width: 640px) {
   main {
     width: auto;
-    height: auto;
     flex-direction: column;
   }
   section.image-part {
@@ -232,11 +277,23 @@ div p {
 
   section.login-part {
     border-radius: 20px 20px 0px 0px;
-    margin-top: 3%;
     width: 100%;
     padding: 0;
+    align-items: flex-start;
+    margin: 0;
+  }
+  section.signup-part {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    padding: 0;
+    align-items: flex-start;
   }
   .login {
+    margin: 10% 0%;
+    width: 99%;
+  }
+  .signup {
+    margin: 10% 0%;
     width: 99%;
   }
   .signup-link,
